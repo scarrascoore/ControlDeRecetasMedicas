@@ -1,0 +1,106 @@
+# =========================
+# Dependencies
+# =========================
+node_modules/
+
+
+# =========================
+# Build outputs
+# =========================
+dist/
+dist-ssr/
+build/
+target/
+coverage/
+
+# Keep nested target/build if intentionally tracked inside src
+!**/src/main/**/target/
+!**/src/test/**/target/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# =========================
+# Logs
+# =========================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# =========================
+# Environment / local config
+# =========================
+.env
+.env.*
+*.local
+
+# =========================
+# Sensitive Spring Boot config
+# =========================
+src/main/resources/application.properties
+src/main/resources/application.yml
+src/main/resources/application-*.properties
+src/main/resources/application-*.yml
+
+# Keep only example config files tracked
+!src/main/resources/application-example.properties
+!src/main/resources/application-example.yml
+
+# =========================
+# IDE / Editors
+# =========================
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.iws
+*.iml
+*.ipr
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# =========================
+# Spring Tool Suite / Eclipse
+# =========================
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+
+# =========================
+# NetBeans
+# =========================
+/nbproject/private/
+/nbbuild/
+/nbdist/
+/.nb-gradle/
+
+# =========================
+# Maven Wrapper
+# =========================
+.mvn/wrapper/maven-wrapper.jar
+
+# =========================
+# OS / misc
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Project-specific files
+# =========================
+HELP.md
+
+# =========================
+# Temporarily ignored folders
+# =========================
+backend/
+frontend/
